@@ -6,13 +6,13 @@
 /*   By: jaboulka <jaboulka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 15:32:34 by jaboulka          #+#    #+#             */
-/*   Updated: 2026/10/23 16:41:28 by jaboulka         ###   ########.fr       */
+/*   Updated: 2026/10/23 17:58:47 by jaboulka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	counter_itoi(long n)
+int	counter_itoa(long n)
 {
 	int	i;
 

@@ -6,7 +6,7 @@
 /*   By: jaboulka <jaboulka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 11:48:21 by jaboulka          #+#    #+#             */
-/*   Updated: 2026/10/23 15:33:30 by jaboulka         ###   ########.fr       */
+/*   Updated: 2026/10/23 17:59:14 by jaboulka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putendl_fd(char *s, int fd);
-char	*ft_itoi(int n);
+char	*ft_itoa(int n);
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 
 #endif 
