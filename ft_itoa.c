@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	counter_itoa(long n)
+static int	counter_itoa(long n)
 {
 	int	i;
 
@@ -37,7 +37,7 @@ char	*ft_itoa(int n)
 	long	num;
 
 	num = n;
-	len = counter_itoi(num);
+	len = counter_itoa(num);
 	str = malloc(sizeof(char) * len);
 	if (!str)
 		return (NULL);

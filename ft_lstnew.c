@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaboulka <jaboulka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/22 19:53:21 by jaboulka          #+#    #+#             */
-/*   Updated: 2026/10/23 13:14:37 by jaboulka         ###   ########.fr       */
+/*   Created: 2026/10/25 15:21:26 by jaboulka          #+#    #+#             */
+/*   Updated: 2026/10/25 15:33:09 by jaboulka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	counting_size(const char *s)
+t_list	*ft_lstnew(void *content)
 {
-	
-}	
+	t_list	*node;
 
-char	**ft_split(const char *s, char c)
-{
-	
+	node = malloc(sizeof(t_list));
+	if (!node)
+		return (NULL);
+	node->content = content;
+	node->next = NULL;
+	return (node);
 }
