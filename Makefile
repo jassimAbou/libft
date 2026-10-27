@@ -6,7 +6,7 @@
 #    By: jaboulka <jaboulka@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/13 12:13:56 by jaboulka          #+#    #+#              #
-#    Updated: 2026/10/27 12:48:18 by jaboulka         ###   ########.fr        #
+#    Updated: 2026/10/27 18:52:23 by jaboulka         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,8 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 NAME = libft.a
+
+LIBRARY = libft.h
 
 SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c \
 	   ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlcpy.c ft_strlcat.c \
@@ -26,7 +28,7 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strle
 	   ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 OBJS = $(SRCS:.c=.o)
 
-%.o: %.c
+%.o: %.c $(LIBRARY)
 	$(CC) $(CFLAGS) -c $< -o $@
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
