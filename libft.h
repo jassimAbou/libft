@@ -6,7 +6,7 @@
 /*   By: jaboulka <jaboulka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 11:48:21 by jaboulka          #+#    #+#             */
-/*   Updated: 2026/10/26 20:46:17 by jaboulka         ###   ########.fr       */
+/*   Updated: 2026/10/27 15:46:22 by jaboulka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-# include <string.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
