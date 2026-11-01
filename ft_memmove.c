@@ -6,7 +6,7 @@
 /*   By: jaboulka <jaboulka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 17:23:33 by jaboulka          #+#    #+#             */
-/*   Updated: 2026/10/15 19:58:08 by jaboulka         ###   ########.fr       */
+/*   Updated: 2026/11/01 20:28:42 by jaboulka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*space;
-	unsigned char	*space1;
+	unsigned char		*space;
+	const unsigned char	*space1;
 
 	space = (unsigned char *)dest;
-	space1 = (unsigned char *)src;
-	if (!src && !dest)
-		return (0);
-	else if (dest > src)
+	space1 = (const unsigned char *)src;
+	if (dest > src)
 	{
 		while (n > 0)
 		{
