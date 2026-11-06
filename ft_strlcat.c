@@ -6,7 +6,7 @@
 /*   By: jaboulka <jaboulka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/16 09:28:01 by jaboulka          #+#    #+#             */
-/*   Updated: 2026/11/04 17:47:33 by jaboulka         ###   ########.fr       */
+/*   Updated: 2026/11/06 10:42:08 by jaboulka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	while (src[lensrc] != '\0')
 		lensrc++;
 	if (lendest == size)
-		return (size + lensrc);
+		return (lendest + lensrc);
 	while (src[i] != '\0' && i < (size - lendest - 1))
 	{
 		dst[lendest + i] = src[i];

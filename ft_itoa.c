@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoi.c                                          :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaboulka <jaboulka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 15:32:34 by jaboulka          #+#    #+#             */
-/*   Updated: 2026/10/23 17:58:47 by jaboulka         ###   ########.fr       */
+/*   Updated: 2026/11/06 10:38:16 by jaboulka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static int	counter_itoa(long n)
 {
 	int	i;
 
-	i = 1;
+	i = 0;
 	if (n <= 0)
 	{
 		i++;
@@ -38,10 +38,10 @@ char	*ft_itoa(int n)
 
 	num = n;
 	len = counter_itoa(num);
-	str = malloc(sizeof(char) * len);
+	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
-	str[--len] = '\0';
+	str[len] = '\0';
 	if (num == 0)
 		str[0] = '0';
 	else if (num < 0)

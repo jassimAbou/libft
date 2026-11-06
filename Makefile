@@ -6,7 +6,7 @@
 #    By: jaboulka <jaboulka@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/10/13 12:13:56 by jaboulka          #+#    #+#              #
-#    Updated: 2026/11/05 15:04:55 by jaboulka         ###   ########.fr        #
+#    Updated: 2026/11/06 10:35:01 by jaboulka         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,3 +46,5 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
+
+.SECONDARY: $(OBJS)
